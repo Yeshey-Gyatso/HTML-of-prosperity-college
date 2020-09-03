@@ -1,0 +1,68 @@
+
+{% extends "f/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<!--
+
+<h1></h1>
+<div class="container">
+  <h5>To be added to our mailing list and be notified when applications are being accepted please complete the following:</h5>
+
+</div>
+
+ -->
+
+ <div class="container padding" id="student_one">
+   <div class="row padding">
+     <div class="col-lg-6 padding">
+           <iframe width="425" height="349" src="http://www.youtube.com/embed/UnBlst3T7bY" frameborder="0" allowfullscreen></iframe>
+       </div>
+         <div class="col-md-12 col-lg-6" id="student_one">
+
+           <p>
+             <b>To be added to our mailing list and be notified when applications are being accepted please complete the following:</b>
+           <br>
+           <!-- <a href="#"><button type="button" class="btn btn-primary" >Learn More</button></a> -->
+
+       </div>
+
+
+   </div>
+ </div>
+
+
+
+
+ <div class="container">
+ <div class="container">
+ <form method="post">
+ <div class="jumbotron"">
+ <div class="container w-50">
+   <div class="row welcome text-center padding">
+     <div class="col-12 ">
+         <h1 class="display-4"><b>Get in Touch</b></h1>
+     </div>
+<form method="post">
+
+<div class="container w-50">
+  <div class="row">
+    <div class="col-12">
+      {% csrf_token %}
+      {{ form_e.as_p }}
+        <input type="submit" class="btn btn-primary" value="submit">
+
+    </div>
+
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

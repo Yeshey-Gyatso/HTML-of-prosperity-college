@@ -1,0 +1,89 @@
+
+{% extends "f/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<!-- <h1></h1>
+<div class="container" >
+  <h5>We offers courses for students starting at age 12.
+    <p> </p>Those under age 16 should get the permission of their parent or guardian to complete the following:
+
+<p> </p>To be added to our mailing list and be notified when applications are being accepted please complete the following:</h5>
+
+</div> -->
+
+<div class="container padding" id="student_one">
+  <div class="row padding">
+    <div class="col-lg-6 padding">
+          <img src= "{% static "f/images/student.jpg" %}" alt="no image" class="img-fluid ">
+      </div>
+        <div class="col-md-12 col-lg-6" id="student_one">
+
+          <p>
+            <b>We offers courses for students starting at age 12. Those under age 16 should get the permission of their parent or guardian to complete the following:
+            <p> </p>
+
+To be added to our mailing list and be notified when applications are being accepted please complete the following:</b></p>
+          <br>
+          <!-- <a href="#"><button type="button" class="btn btn-primary" >Learn More</button></a> -->
+
+      </div>
+
+
+  </div>
+</div>
+
+
+
+
+<div class="container">
+<div class="container">
+
+
+
+<form method="post">
+<div class="jumbotron"">
+
+<div class="container w-50">
+  <div class="row welcome text-center padding">
+    <div class="col-12 ">
+        <h1 class="display-4"><b>Get in Touch</b></h1>
+    </div>
+
+  </div>
+  <div class="row ">
+    <div class="col-12">
+      {% csrf_token %}
+      {{ form.as_p }}
+        <input type="submit" class="btn btn-primary btn-lg" value="submit">
+
+    </div>
+
+  </div>
+  </div>
+</div>
+</form>
+</div>
+</div>
+<div class="container-fluid padding ">
+  <div class="jumbotron" id="jj">
+    <div class="container padding">
+      <div class="container mt-5 padding">
+        <div class="row mt-5">
+          <div class="col-12">
+            <h5>If you are currently seeking employment you can apply now for positions with Bid Ocean, New Kalapa Tech Park and Climate Survival Solutions India at</h5>
+            <a href="https://www.bidocean.com/employment.php">CLICK HERE </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+{% endblock %}
